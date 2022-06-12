@@ -56,9 +56,9 @@ const Register = () => {
       if (res.status === 200 || res.status === 201) {
         // const token = await res.json();
         // localStorage.setItem("token", token.token);
-        // navigate("/");
+        navigate("/");
         // reset();
-        setCode(true);
+        // setCode(true);
       } else if (res.status === 400) {
         setError("Пользователь с таким логином или email'ом уже существует!");
       }
